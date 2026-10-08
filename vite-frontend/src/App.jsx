@@ -47,6 +47,7 @@ function App() {
       alert(response.data.detail)
     } else {
       const response = await axios.put(`${BASE_URL}/students/${id}`, { 
+        id: id,
         name: name,
         course: course })
       alert(response.data.detail)
